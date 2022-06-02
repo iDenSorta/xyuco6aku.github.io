@@ -8,7 +8,8 @@ body{
     background-color:#E5E5E5;
     font-size: 14px;
     line-height: 24px;
-    
+    max-width: 1024px;
+    margin: auto;
 }
 
 .bg-white{
@@ -232,6 +233,7 @@ body{
     padding-left: 30px;    
 }
 .services{
+  
     height: 800px;
     padding: 1;
 }
@@ -290,6 +292,7 @@ body{
     line-height: 48px;
 }
 .prices_text_top{
+    display: flex;
     background-image: url(../img/prices_ellipse.svg);
     background-position-x: 12px;
     width: 500px;
@@ -311,29 +314,37 @@ body{
 .prices_table, .prices_table_mini{
     padding: 6px 6px 6px 6px;
     display: flex;
-    justify-content: space-evenly;
+    
     border: 2px solid #87B4E1;
     border-radius: 24px;
 }
 .prices_table{
     margin-left: 24px;
     margin-right: 6px;
-    width: 561px;
-    height: 348px;
+    max-width: 561px;
+    min-height: 348px;
 }
 .prices_table_mini{
-    position: relative;
+    
     margin-left: 6px;
     margin-right: 24px;
-    width: 397px;
-    height: 183px;
+    max-width: 397px;
+    max-height: 167px;
+    min-width: 297px;
     
+}
+.pricestable_mini{
+    max-height: 183px;
+    min-width: 400px;
+}
+.pricestable{
+    max-height: 348px;
+    max-width: 472px;
 }
 .prices_table>th,td {
-   
     vertical-align: center;
-    
 }
+
 
 #p{
     font-size: 14px;
@@ -351,25 +362,23 @@ body{
   
 .prices{
     display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-items:flex-start;
     padding-bottom: 24px;
 }
-.pricestable_mini{
-    width: 367px;
-    height: 183px;
-}
-.pricestable{
-    padding-top: ;
-    width: 527px;
-    height: 350px;
-}
+
 .prices_text>p{
     text-align: left;
-    width: 367px;
-    height: 106px;
-    position: absolute;
-    bottom: 10px;
-    left: 60%;
-      
+    
+}
+
+.prices_text{
+    display: flex;
+    padding: 12px;
+    max-width: 567px;
+    min-height: 96px;
+    align-self: flex-start;
 }
 
 .action_call{
@@ -378,12 +387,13 @@ body{
     margin-left: 24px;
     display:flex;
     justify-content:space-between;
+    min-width: 720px;
 }
 
 .action_call_text{
     
     width: 450px;
-    height: 190px;
+    min-height: 444px;
 }
 
 .action_call_st_man{
@@ -397,7 +407,8 @@ body{
 .feedback{
     padding: 24px 24px 24px 24px;
     display: flex;
-    justify-content:space-between;
+    flex-wrap: wrap-reverse;
+    justify-content:space-around;
 }
 
 .feedback_unit{
