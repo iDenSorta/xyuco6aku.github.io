@@ -20,7 +20,6 @@ body{
     background-color: #FFFFFF;
     position: relative;
     max-width: 1024px;
-    
     margin: auto;
 }
 
@@ -412,9 +411,6 @@ body{
     border: 2px solid #87B4E1;
     border-radius: 24px;
     flex-direction: column;
-    
-    
-   
 }
 
 .feedback_unit>h3{
@@ -425,5 +421,107 @@ body{
     
     }
 .feedback_title{
-   padding: 24px; 
+   padding-top: 60px;
+   padding-left: 24px; 
+}
+
+.feedback_link>a{
+    text-align: center;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: #5EBB99;
+    color:#5EBB99;
+}
+.feedback_link{
+    text-align: center;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 24px 24px 24px;
+}
+.contacts_map{
+    background-image: url(../img/contacts_map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+    object-fit:fill;
+    width: 560px;
+    height: 546px;
+    border-color: #5EBB99;
+    border: 2px solid #87B4E1;
+    border-radius: 24px;
+    
+}
+.contacts_info{
+    display: flex;
+    flex-wrap: wrap;
+    background-position: center;
+    background-size: contain;
+    object-fit:contain;
+    width: 340px;
+    height: 546px;
+    border-color: #5EBB99;
+    border: 2px solid #87B4E1;
+    align-content: flex-start;
+    border-radius:24px;
+    padding-left: 24px;
+    padding-top: 24px;
+    
+}
+
+.contacts_info>h1{
+   padding-right: 100px;
+    font-weight: 400;
+    font-size: 40px;
+    color: #2A2A2A;
+}
+
+.contacts_img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    margin: 0%;
+}
+.contacts_info>h2{
+    margin: auto;
+    width: 220px;
+    height: 100px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2A2A2A;
+}
+.contacts_info>h3{
+    margin-top: 5%;
+    width: 270px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    text-decoration-line: underline;
+    color: #EB990F; 
+}
+.contacts_info>h4{
+    width: 250px;
+    text-align: left;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color:#EB990F;
+}
+.contacts_info>h5{
+    width: 330px;
+    margin-top: 0%;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color:#2A2A2A;
+}
+.footer{
+    max-width: 1024px;
+    height: 107px;
 }
