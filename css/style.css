@@ -7,6 +7,7 @@ body{
     font-style: normal;
     background-color:#E5E5E5;
     font-size: 14px;
+    line-height: 24px;
     
 }
 
@@ -232,6 +233,7 @@ body{
     padding-left: 30px;    
 }
 .services{
+    height: 800px;
     padding: 1;
 }
 
@@ -269,7 +271,7 @@ body{
 }
 .girl{
     position: absolute;
-    top:10px;
+    bottom: 60px;
     right:54px;
     z-index: 1;
 }
@@ -289,10 +291,20 @@ body{
     line-height: 48px;
 }
 .prices_text_top{
+    background-image: url(../img/prices_ellipse.svg);
+    background-position-x: 12px;
+    width: 500px;
+    height: 95px;
+    background-repeat: no-repeat;
     position: absolute;
     top: 675px;
-    display: flex;
+    text-align: left;
+    padding-top: 18px;
+    margin-left: 24px;
+    font-size: 40px;
+    color: #3A6AB2;
     }
+
 .prices_ellipse{
     position: absolute;
     top: 670px;
@@ -339,7 +351,8 @@ body{
       
   
 .prices{
-    display: flex;  
+    display: flex;
+    padding-bottom: 24px;
 }
 .pricestable_mini{
     width: 367px;
@@ -358,4 +371,59 @@ body{
     bottom: 10px;
     left: 60%;
       
+}
+
+.action_call{
+    padding-top: 24px;
+    margin-right: 24px;
+    margin-left: 24px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.action_call_text{
+    
+    width: 450px;
+    height: 190px;
+}
+
+.action_call_st_man{
+    display: block;
+    
+    right:  24px;
+    width: 460px;
+    height: 365px;
+}
+    
+.feedback{
+    padding: 24px 24px 24px 24px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.feedback_unit{
+    display: flex;
+    padding: 30px;
+    background-image: url(../img/feedback_stamps.svg);
+    background-repeat: no-repeat;
+    max-width: 250px;
+    max-height: 335px;
+    border-color: #5EBB99;
+    border: 2px solid #87B4E1;
+    border-radius: 24px;
+    flex-direction: column;
+    
+    
+   
+}
+
+.feedback_unit>h3{
+    color: #2A2A2A;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    
+    }
+.feedback_title{
+   padding: 24px; 
 }
