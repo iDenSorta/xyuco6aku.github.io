@@ -268,10 +268,10 @@ body{
     
 }
 .girl{
-    
     position: absolute;
-    bottom:10px;
+    top:10px;
     right:54px;
+    z-index: 1;
 }
 .services-text-bottom{
     width: 450px;
@@ -297,14 +297,65 @@ body{
     position: absolute;
     top: 670px;
 }
-.prices_table{
-    margin: 24px;
-    padding: 12px 12px 12px 12px;
+.prices_table, .prices_table_mini{
+    padding: 6px 6px 6px 6px;
     display: flex;
-    justify-content: space-around;
-    width: 500px;
-    height: 348px;
-    border-color: #5EBB99;
+    justify-content: space-evenly;
     border: 2px solid #87B4E1;
     border-radius: 24px;
+}
+.prices_table{
+    margin-left: 24px;
+    margin-right: 6px;
+    width: 561px;
+    height: 348px;
+}
+.prices_table_mini{
+    position: relative;
+    margin-left: 6px;
+    margin-right: 24px;
+    width: 397px;
+    height: 183px;
+    
+}
+.prices_table>th,td {
+   
+    vertical-align: center;
+    
+}
+
+#p{
+    font-size: 14px;
+    width: 115px;
+    text-align: left;
+    color: red;
+    }
+#pm{
+   font-size: 14px;
+   width: 83px;
+   text-align: left;
+   color: red;
+}
+      
+  
+.prices{
+    display: flex;  
+}
+.pricestable_mini{
+    width: 367px;
+    height: 183px;
+}
+.pricestable{
+    padding-top: ;
+    width: 527px;
+    height: 350px;
+}
+.prices_text>p{
+    text-align: left;
+    width: 367px;
+    height: 106px;
+    position: absolute;
+    bottom: 10px;
+    left: 60%;
+      
 }
