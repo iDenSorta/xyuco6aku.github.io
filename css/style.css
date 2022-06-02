@@ -460,8 +460,8 @@ body{
     background-position: center;
     background-size: contain;
     object-fit:contain;
-    width: 340px;
-    height: 546px;
+    max-width: 340px;
+    max-height: 546px;
     border-color: #5EBB99;
     border: 2px solid #87B4E1;
     align-content: flex-start;
