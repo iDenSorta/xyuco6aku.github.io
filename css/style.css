@@ -20,7 +20,7 @@ body{
 .wrapper{
     background-color: #FFFFFF;
     position: relative;
-    max-width: 1023px;
+    max-width: 1024px;
     margin: auto; 
 }
 
@@ -87,19 +87,22 @@ body{
 }
 
 .banner{
-    position: relative;
-    display: block;
-    width: 976px;
-    height: 612px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;    
+    display: flex;
+    width: 100%;
+    height: 712px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url(../img/stamp_and_man.svg);
+    background-repeat: no-repeat;
+    background-position: 92% 33%;
+    margin-left: 24px;
    
 }
 
 .banner>p{
-    position: absolute;
-    bottom: 0;
+    display: flex;
+    order: 1;
     left: 0px;
     font-size: 40px;
     width: 1024px;
@@ -108,10 +111,15 @@ body{
 
 
 .banner-text{
-    padding-right: 45%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
     font-size: 12px;
+
 }
 .banner-text> h1{
+    order: 0;
     color: #3A6AB2;
     font-weight: 400;
     font-size: 40px;
@@ -119,24 +127,65 @@ body{
     margin-bottom: 30px ;
     width: 700px;
 }
+
+
+
 .stars{
-    position: relative;
-    width: 276px;
-    height: 140px;
-    margin-right: auto;
+    display: flex;
+    width: 309px;
+    height: 118px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    /* margin-right: 24px; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 
-.star{
-    display: inline-block;
-    width: 90px;
-    height: 140px;
-    align-content: center;
-    background-image: url(../img/star.svg);
+.star1{
+    display: flex;
+    width: 74px;
+    text-align: center;
+    background-image: url(../img/banner_star1.svg);
     background-repeat: no-repeat;
-    background-position:top;
-    vertical-align: text-top;
+    background-position: top;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: center;
+    /* padding-right: 20px; */
+    margin-right: 36px;
+    
+    
 }
-
+.star2{
+    display: flex;
+    width: 74px;
+    padding-bottom: 20px;
+    align-content: center;
+    background-image: url(../img/banner_star2.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: center;
+    margin-right: 34px;
+}
+.star3{
+    display: flex;
+    width: 74px;
+    padding-bottom: 20px;
+    align-content: center;
+    background-image: url(../img/banner_star3.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: center;
+}
 .btn{
     background-color:#5EBB99;
 	border-radius:12px;
@@ -147,19 +196,13 @@ body{
 	padding:16px 32px;
     gap: 10px;
 	text-decoration:none;
-}
-
-.top-image{
-    position: absolute;
-    background-image: url(../img/stamp_and_man.svg);
-    width:  525px;
-    height: 555px;
-    top: 0px;
-    right: 0px;
     
 }
+
+
 .stamps{
-    margin: auto;
+    margin-left: 12px;
+    margin-right: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -167,6 +210,14 @@ body{
     /* height: 350px; */
     flex-wrap: wrap;
     padding-bottom: 100px;
+}
+.stamps_h1>h1{
+    margin-left: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 80px;
+    color: #2A2A2A;
 }
 .stamps-p{
     font-size: 72px;
@@ -190,6 +241,7 @@ body{
     /* shape-margin: 100px; */
     padding-left: 12px;
     padding-right: 12px;
+    align-content: center;
 }
 .stamp>h1{
     display: flex;
@@ -279,56 +331,50 @@ body{
     justify-content: flex-start;
 }
 .services{
-  
-    height: 800px;
-    padding: 1;
-}
-
-.service-images-top{
-    position: relative;
     display: flex;
-    width: 1024px;
-}
-.couple{
-    position:absolute;
-    top:50px;
-    left:120px;
-}
-.vec2{
-    position: absolute;
-    top: 0;
-    left: 70px;
-}
-.services-text-top{
-    width: 450px;
-    top:120px;
-    display: inline-block;
-    position: absolute;
-    right:10px;
-}
-
-.services-images-bottom{
-    height: 450px;
-    position: absolute;
-    display: inline-block;
-    width: 1024px;
-    position: relative;
-   
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 700px;
+    align-items: stretch;
+    max-height: 2200px;
+    
     
 }
-.girl{
-    position: absolute;
-    bottom: 60px;
-    right:54px;
-    z-index: 1;
+
+.services-images-top{
+    display: flex;
+    order: 0;
+    width: 50%;
+    height: 60%;
+    
 }
-.services-text-bottom{
-    width: 450px;
-    top:20px;
+
+
+.services-text-top{
     display: inline-block;
-    position: absolute;
-    left:10px;
-    padding: 24px 24px;
+    width: 30%;
+    height: 40%;
+    order: 2;
+    align-self: center;
+    padding: 50px;
+    
+    }
+.services-images-bottom{
+    order: 3;
+    width: 40%;
+    height: 45%;
+    display: inline-block;
+    z-index: 1;
+    
+}
+
+.services-text-bottom{
+    order: 1;
+    width: 40%;
+    padding: 50px;
+    display: inline-block;
+       
 }
 
 .services>h1{
@@ -338,25 +384,22 @@ body{
     line-height: 48px;
 }
 .prices_text_top{
+    order: 0;
     display: flex;
     background-image: url(../img/prices_ellipse.svg);
-    background-position-x: 12px;
-    width: 500px;
-    height: 95px;
+    background-position-x: 14px;
+    width: 50%;
+    height: 97px;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 675px;
     text-align: left;
-    padding-top: 18px;
-    margin-left: 24px;
+    padding-top: 2px;
+    margin-left: 32px;
+    margin-bottom: 16px;
     font-size: 40px;
     color: #3A6AB2;
     }
 
-.prices_ellipse{
-    position: absolute;
-    top: 670px;
-}
+
 .prices_table, .prices_table_mini{
     padding-top: 6px;
     padding-bottom: 6px;
@@ -367,11 +410,11 @@ body{
     justify-content: space-around;
 }
 .prices_table{
-    width: 772px;
+    order: 1;
+    width: 50%;
     margin-left: 24px;
     margin-right: 6px;
-    max-width: 561px;
-    min-width: 389px;
+    
 }
 .prices_table_mini{
     
@@ -393,6 +436,12 @@ body{
     vertical-align: center;
 }
 
+.prices_table_and_text{
+    order: 2;
+    width: 47%;
+    height: 289px;
+    align-self: center;
+}
 
 #p{
     font-size: 14px;
@@ -412,10 +461,12 @@ body{
   
 .prices{
     display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    align-items:flex-start;
-    padding-bottom: 24px;
+    flex-wrap: wrap;
+    /* align-items: stretch; */
+    align-items: flex-start;
+    flex-direction: column;
+    height: 405px;
+    justify-content: flex-end;
 }
 
 .prices_text>p{
@@ -425,27 +476,38 @@ body{
 
 .prices_text{
     display: flex;
-    padding: 12px;
-    max-width: 567px;
-    min-height: 96px;
+    margin-right: 68px;
+    margin-left: 32px;
+    /* max-width: 567px; */
+    /* min-height: 96px; */
     align-self: flex-start;
 }
 
 .action_call{
-    padding-top: 24px;
+    /* padding-top: 58px; */
+    margin-top: 60px;
     margin-right: 24px;
     margin-left: 24px;
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     min-width: 720px;
 }
 
 .action_call_text{
-    
+    padding-top: 40px;
     width: 450px;
     min-height: 444px;
 }
 
+.action_call_text>h1{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.action_call_text>p{
+    padding-bottom: 12px;
+}
 .action_call_st_man{
     display: block;
     
@@ -487,7 +549,6 @@ body{
     
     }
 .feedback_title{
-   padding-top: 60px;
    padding-left: 24px; 
 }
 
