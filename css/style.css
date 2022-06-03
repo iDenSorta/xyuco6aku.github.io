@@ -8,7 +8,8 @@ body{
     background-color:#E5E5E5;
     font-size: 14px;
     line-height: 24px;
-    
+    max-width: 1024px;
+    margin: auto;
 }
 
 .bg-white{
@@ -162,9 +163,10 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width:976px;
-    height: 350px;
-    padding: 24px 24px 100px;
+    /* width: 976px; */
+    /* height: 350px; */
+    flex-wrap: wrap;
+    padding-bottom: 100px;
 }
 .stamps-p{
     font-size: 72px;
@@ -173,16 +175,24 @@ body{
     background-image: url(../img/stamp.svg);
     background-repeat: no-repeat;
     background-position: right 10px bottom 10px;
-    position: relative;
     margin-right: 0px;
-    display:inline-block;
-    width: 300px;
-    height: 323px;
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+    height: 335px;
     border-color: #5EBB99;
     border: 2px solid #87B4E1;
     border-radius: 24px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* margin-block: 20px; */
+    /* shape-margin: 100px; */
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .stamp>h1{
+    display: flex;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -205,16 +215,13 @@ body{
     display: flex;
     color: #2A2A2A;
     font-size: 14px;
+    font-weight: 400;
     padding-left: 30px;
     margin-top: 35px;
     margin-bottom: 35px;
     }
 
 .stamp>h4{
-    position: absolute;
-    top:25%;
-    left: 50%;
-    right: 10%;
     display: flex;
     color: #EB990F;
     font-weight: 400;
@@ -225,13 +232,54 @@ body{
     margin-bottom: 0px;
 }
 .stamp>a{
+    align-self: start;
     font-size: 24px;
     text-decoration: none;
     color: #5EBB99;
-    margin-top: 20px;
-    padding-left: 30px;    
+    margin-top: 14px;
+    padding-left: 40px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;    
+}
+.stamps_doctors{
+    display: flex;
+    width: 300px;
+    height: 80px;
+}
+.stamps_doctors>h2{
+    display: flex;
+    color: #EB990F;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    padding-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.stamps_doctors>h4{
+    display: flex;
+    color: #EB990F;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 10px;
+    margin-top: 23px;
+    margin-bottom: 8px;
+    width: 84px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: flex-start;
 }
 .services{
+  
     height: 800px;
     padding: 1;
 }
@@ -290,6 +338,7 @@ body{
     line-height: 48px;
 }
 .prices_text_top{
+    display: flex;
     background-image: url(../img/prices_ellipse.svg);
     background-position-x: 12px;
     width: 500px;
@@ -309,67 +358,77 @@ body{
     top: 670px;
 }
 .prices_table, .prices_table_mini{
-    padding: 6px 6px 6px 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     display: flex;
-    justify-content: space-evenly;
     border: 2px solid #87B4E1;
     border-radius: 24px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .prices_table{
+    width: 772px;
     margin-left: 24px;
     margin-right: 6px;
-    width: 561px;
-    height: 348px;
+    max-width: 561px;
+    min-width: 389px;
 }
 .prices_table_mini{
-    position: relative;
+    
     margin-left: 6px;
     margin-right: 24px;
-    width: 397px;
-    height: 183px;
+    max-width: 397px;
+    max-height: 167px;
+    min-width: 297px;
     
+}
+.pricestable_mini{
+    min-width: 276px;
+}
+.pricestable{
+    max-height: 348px;
+    max-width: 472px;
 }
 .prices_table>th,td {
-   
     vertical-align: center;
-    
 }
+
 
 #p{
     font-size: 14px;
-    width: 115px;
     text-align: left;
     color: red;
+    width: 112px;
+    text-indent: 20px;
     }
 #pm{
    font-size: 14px;
-   width: 83px;
-   text-align: left;
-   color: red;
+    text-align: left;
+    color: red;
+    width: 112px;
+    text-indent: 20px;
 }
       
   
 .prices{
     display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-items:flex-start;
     padding-bottom: 24px;
 }
-.pricestable_mini{
-    width: 367px;
-    height: 183px;
-}
-.pricestable{
-    padding-top: ;
-    width: 527px;
-    height: 350px;
-}
+
 .prices_text>p{
     text-align: left;
-    width: 367px;
-    height: 106px;
-    position: absolute;
-    bottom: 10px;
-    left: 60%;
-      
+    
+}
+
+.prices_text{
+    display: flex;
+    padding: 12px;
+    max-width: 567px;
+    min-height: 96px;
+    align-self: flex-start;
 }
 
 .action_call{
@@ -378,12 +437,13 @@ body{
     margin-left: 24px;
     display:flex;
     justify-content:space-between;
+    min-width: 720px;
 }
 
 .action_call_text{
     
     width: 450px;
-    height: 190px;
+    min-height: 444px;
 }
 
 .action_call_st_man{
@@ -397,7 +457,11 @@ body{
 .feedback{
     padding: 24px 24px 24px 24px;
     display: flex;
+    flex-wrap: nowrap;
     justify-content:space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: flex-start;
 }
 
 .feedback_unit{
@@ -405,12 +469,14 @@ body{
     padding: 30px;
     background-image: url(../img/feedback_stamps.svg);
     background-repeat: no-repeat;
-    max-width: 250px;
+    min-width: 173px;
     max-height: 335px;
     border-color: #5EBB99;
     border: 2px solid #87B4E1;
     border-radius: 24px;
     flex-direction: column;
+    width: 244px;
+    margin: 6px;
 }
 
 .feedback_unit>h3{
@@ -433,7 +499,18 @@ body{
     color:#5EBB99;
 }
 .feedback_link{
+    display: flex;
     text-align: center;
+    /* width: 182px; */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* margin-left: 26px; */
+    /* max-width: 284px; */
+    /* align-content: space-around; */
+    /* margin-left: 368px; */
+    justify-content: space-around;
+    padding-left: 399px;
+    padding-right: 399px;
 }
 
 .contacts{
@@ -447,13 +524,16 @@ body{
     background-repeat: no-repeat;
     background-size: fill;
     object-fit:fill;
-    width: 560px;
-    height: 546px;
+    height: 542px;
     border-color: #5EBB99;
     border: 2px solid #87B4E1;
     border-radius: 24px;
-    
+    width: 563px;
+    margin-right: 24px;
+    min-width: 358px;
 }
+    
+
 .contacts_info{
     display: flex;
     flex-wrap: wrap;
@@ -468,6 +548,7 @@ body{
     border-radius:24px;
     padding-left: 24px;
     padding-top: 24px;
+    width: 398px;
     
 }
 
