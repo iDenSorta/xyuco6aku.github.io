@@ -20,8 +20,8 @@ body{
 .wrapper{
     background-color: #FFFFFF;
     position: relative;
-    max-width: 1024px;
-    margin: auto;
+    max-width: 1023px;
+    margin: auto; 
 }
 
 .nav{
