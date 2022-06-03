@@ -1,4 +1,3 @@
-
 body{
     font-family: 'igra_sansregular';
     src: url('igrasans.woff2') format('woff2'),
@@ -12,16 +11,20 @@ body{
     margin: auto;
 }
 
-.bg-white{
-    max-width: 1024px;
-    margin: auto;
-}
+
 
 .wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: #FFFFFF;
-    position: relative;
-    max-width: 1024px;
-    margin: auto; 
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+    min-height: 100%;
+    max-width: 1024px; /* 2 */
+    padding-right: 24px; /* 3 */
+    padding-left:  24px; /* 3 */ 
+    overflow: hidden;
 }
 
 .nav{
@@ -46,19 +49,19 @@ body{
 
 .header{
     display: flex;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    max-width: 1024px;
+    min-width: 769px;
     margin: 0 auto;
 }
 
 .logo-image{
-   display: block;
+   display: flex;
    width: 71px;
    height: 61px;
    background-image: url(../img/logo.svg);
+   background-size: 100%;
    background-repeat: no-repeat;
    margin-left: 24px;
 }
@@ -66,12 +69,15 @@ body{
 
 
 .vector{
+    display: flex;
     text-align: center;
     width: 25%;
     height: 100px;
     left: 95%;
     top: 20%;
     background-image: url(../img/header_vector.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 
 }
 
@@ -79,7 +85,6 @@ body{
     display: block;
     color: #FFFFFF;
     font-style: normal;
-    
     font-size: 14px;
     line-height: 14px;
     padding-top: 10%;
@@ -96,6 +101,7 @@ body{
     background-image: url(../img/stamp_and_man.svg);
     background-repeat: no-repeat;
     background-position: 92% 33%;
+    background-size: 65%;
     margin-left: 24px;
    
 }
@@ -105,16 +111,14 @@ body{
     order: 1;
     left: 0px;
     font-size: 40px;
-    width: 1024px;
-    
 }
 
 
 .banner-text{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 45%;
     font-size: 12px;
 
 }
@@ -125,14 +129,14 @@ body{
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 30px ;
-    width: 700px;
+    width: 100%;
 }
 
 
 
 .stars{
     display: flex;
-    width: 309px;
+    width: 30%;
     height: 118px;
     line-height: 20px;
     margin-bottom: 40px;
@@ -145,7 +149,7 @@ body{
 
 .star1{
     display: flex;
-    width: 74px;
+    width: 25%;
     text-align: center;
     background-image: url(../img/banner_star1.svg);
     background-repeat: no-repeat;
@@ -161,7 +165,7 @@ body{
 }
 .star2{
     display: flex;
-    width: 74px;
+    width: 25%;
     padding-bottom: 20px;
     align-content: center;
     background-image: url(../img/banner_star2.svg);
@@ -175,7 +179,7 @@ body{
 }
 .star3{
     display: flex;
-    width: 74px;
+    width: 25%;
     padding-bottom: 20px;
     align-content: center;
     background-image: url(../img/banner_star3.svg);
@@ -229,9 +233,8 @@ body{
     margin-right: 0px;
     display: flex;
     flex-direction: column;
-    width: 288px;
-    height: 335px;
-    border-color: #5EBB99;
+    max-width: 30%;
+    height: 100%;
     border: 2px solid #87B4E1;
     border-radius: 24px;
     flex-wrap: wrap;
@@ -301,8 +304,8 @@ body{
 }
 .stamps_doctors{
     display: flex;
-    width: 300px;
-    height: 80px;
+    width: 100%;
+    height: 20%;
 }
 .stamps_doctors>h2{
     display: flex;
@@ -324,13 +327,14 @@ body{
     padding-left: 10px;
     margin-top: 23px;
     margin-bottom: 8px;
-    width: 84px;
+    width: 30%;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: space-between;
     justify-content: flex-start;
 }
 .services{
+    border:2px solid #2A2A2A;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -447,14 +451,15 @@ body{
     font-size: 14px;
     text-align: left;
     color: red;
-    width: 112px;
-    text-indent: 20px;
+    width: 23%;
+    height: 5%;
+    text-indent: 10px;
     }
 #pm{
    font-size: 14px;
     text-align: left;
     color: red;
-    width: 112px;
+    width: 32%;
     text-indent: 20px;
 }
       
@@ -490,12 +495,11 @@ body{
     margin-left: 24px;
     display: flex;
     justify-content: space-between;
-    min-width: 720px;
-}
+    }
 
 .action_call_text{
     padding-top: 40px;
-    width: 450px;
+    width: 45%;
     min-height: 444px;
 }
 
@@ -512,7 +516,7 @@ body{
     display: block;
     
     right:  24px;
-    width: 460px;
+    width: 100%;
     height: 365px;
 }
     
@@ -524,6 +528,7 @@ body{
     flex-direction: row;
     align-items: flex-end;
     align-content: flex-start;
+    width: 100%;
 }
 
 .feedback_unit{
@@ -531,13 +536,11 @@ body{
     padding: 30px;
     background-image: url(../img/feedback_stamps.svg);
     background-repeat: no-repeat;
-    min-width: 173px;
-    max-height: 335px;
     border-color: #5EBB99;
     border: 2px solid #87B4E1;
     border-radius: 24px;
     flex-direction: column;
-    width: 244px;
+    width: 30%;
     margin: 6px;
 }
 
@@ -577,7 +580,7 @@ body{
 .contacts{
     display: flex;
     justify-content: space-between;
-    padding: 64px 24px 24px 24px;
+    width: 100%;
 }
 .contacts_map{
     background-image: url(../img/contacts_map.png);
@@ -589,8 +592,8 @@ body{
     border-color: #5EBB99;
     border: 2px solid #87B4E1;
     border-radius: 24px;
-    width: 563px;
-    margin-right: 24px;
+    width: 55%;
+    
     min-width: 358px;
 }
     
@@ -609,27 +612,27 @@ body{
     border-radius:24px;
     padding-left: 24px;
     padding-top: 24px;
-    width: 398px;
+    width: 38%;
     
 }
 
 .contacts_info>h1{
    padding-right: 100px;
-    font-weight: 400;
-    font-size: 40px;
-    color: #2A2A2A;
+   font-weight: 400;
+   font-size: 40px;
+   color: #2A2A2A;
 }
 
 .contacts_img{
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 60px;
+    width: 15%;
     height: 60px;
     margin: 0%;
 }
 .contacts_info>h2{
     margin: auto;
-    width: 220px;
+    width: 70%;
     height: 100px;
     text-align: left;
     font-weight: 400;
@@ -639,7 +642,7 @@ body{
 }
 .contacts_info>h3{
     margin-top: 5%;
-    width: 270px;
+    width: 80%;
     font-weight: 400;
     font-size: 28px;
     line-height: 42px;
@@ -647,7 +650,7 @@ body{
     color: #EB990F; 
 }
 .contacts_info>h4{
-    width: 250px;
+    width: 45%;
     text-align: left;
     height: 20px;
     font-size: 20px;
@@ -656,7 +659,7 @@ body{
     color:#EB990F;
 }
 .contacts_info>h5{
-    width: 330px;
+    width: 95%;
     margin-top: 0%;
     font-size: 16px;
     line-height: 24px;
@@ -664,6 +667,6 @@ body{
     color:#2A2A2A;
 }
 .footer{
-    max-width: 1024px;
-    height: 107px;
+    flex: 0 0 auto;
+    width: 100%;
 }
