@@ -12,9 +12,9 @@ body{
     margin: auto;
 }
 
-.bg-white{
-    max-width: 1024px;
-    margin: auto;
+img{
+    max-width: 100%;
+
 }
 
 .wrapper{
@@ -30,7 +30,7 @@ body{
     justify-content: center;
     padding-left: 0%;
     padding-right: 0%;
-    
+    gap:20px;
     
 }
 
@@ -46,12 +46,12 @@ body{
 
 .header{
     display: flex;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
     max-width: 1024px;
     margin: 0 auto;
+    min-width: 924px;
 }
 
 .logo-image{
@@ -76,13 +76,18 @@ body{
 }
 
 .vector-text{
-    display: block;
+    display: flex;
     color: #FFFFFF;
     font-style: normal;
-    
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 14px;
     padding-top: 10%;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    min-width: 256px;
    
 }
 
@@ -209,7 +214,7 @@ body{
     /* width: 976px; */
     /* height: 350px; */
     flex-wrap: wrap;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 .stamps_h1>h1{
     margin-left: 24px;
@@ -229,12 +234,12 @@ body{
     margin-right: 0px;
     display: flex;
     flex-direction: column;
-    width: 288px;
-    height: 335px;
+    width: 286px;
+    height: 319px;
     border-color: #5EBB99;
     border: 2px solid #87B4E1;
     border-radius: 24px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: flex-start;
     /* margin-block: 20px; */
@@ -330,16 +335,23 @@ body{
     align-content: space-between;
     justify-content: flex-start;
 }
-.services{
+.services_top{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 700px;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: stretch;
-    max-height: 2200px;
-    
-    
+    align-content: flex-start;
+}
+
+.services_bottom{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 200px;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: flex-start;
 }
 
 .services-images-top{
@@ -355,13 +367,13 @@ body{
     display: inline-block;
     width: 30%;
     height: 40%;
-    order: 2;
+    order: 1;
     align-self: center;
     padding: 50px;
     
     }
 .services-images-bottom{
-    order: 3;
+    order: 1;
     width: 40%;
     height: 45%;
     display: inline-block;
@@ -370,14 +382,14 @@ body{
 }
 
 .services-text-bottom{
-    order: 1;
+    order: 0;
     width: 40%;
     padding: 50px;
     display: inline-block;
        
 }
 
-.services>h1{
+.services_top>h1{
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -397,6 +409,7 @@ body{
     margin-bottom: 16px;
     font-size: 40px;
     color: #3A6AB2;
+    margin-top: 120px;
     }
 
 
@@ -411,26 +424,24 @@ body{
 }
 .prices_table{
     order: 1;
-    width: 50%;
+    min-width: 495px;
+    width: 554px;
     margin-left: 24px;
     margin-right: 6px;
     
 }
 .prices_table_mini{
-    
     margin-left: 6px;
-    margin-right: 24px;
+    /* margin-right: -94px; */
     max-width: 397px;
-    max-height: 167px;
-    min-width: 297px;
-    
+    /* max-height: 167px; */
+    /* min-width: 341px;*/
 }
 .pricestable_mini{
     min-width: 276px;
 }
 .pricestable{
-    max-height: 348px;
-    max-width: 472px;
+    max-width: 510px;
 }
 .prices_table>th,td {
     vertical-align: center;
@@ -462,11 +473,9 @@ body{
 .prices{
     display: flex;
     flex-wrap: wrap;
-    /* align-items: stretch; */
-    align-items: flex-start;
     flex-direction: column;
-    height: 405px;
-    justify-content: flex-end;
+    height: 290px;
+    justify-content: space-between;
 }
 
 .prices_text>p{
