@@ -829,6 +829,8 @@ overflow: hidden;
     background-image: url(../img/header_vector_mobile.svg);
     background-repeat: no-repeat;
     position: relative;
+    z-index: 1;
+    
 }
 
 .nav{
@@ -867,10 +869,10 @@ overflow: hidden;
     position:absolute;
     top: 0px;
     left: 0px;
-    width: 75px;
-    height: 72px;
+    width: 0px;
+    height: 0px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
   }
 
 .menu__btn>span,
