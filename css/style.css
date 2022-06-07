@@ -709,10 +709,7 @@ a[href^="tel"]{
     padding-bottom: 52px;
 }
 .contacts_map{
-    background-image: url(../img/contacts_map.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: fill;
+    overflow: hidden;
     object-fit:fill;
     height: 542px;
     border-color: #5EBB99;
