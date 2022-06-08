@@ -974,12 +974,11 @@ input:checked + * .nav{
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
-    margin-top: 32px;
+    margin-top: 0px;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: flex-start;
     align-items: flex-start;
-
 }
 
 .banner-text> h1 {
@@ -1160,8 +1159,8 @@ input:checked + * .nav{
     align-items: center;
     align-content: space-between;
     margin-left: 20px;
-    margin-top: -15px;
-    margin-bottom: 13px;
+    margin-top: -14px;
+    margin-bottom: 0px;
 }
 
 .services-text-bottom {
@@ -1340,7 +1339,7 @@ input:checked + * .nav{
     padding-top: 24px;
     width: 90%;
     /* min-height: 452px; */
-    height: 466px;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -1358,9 +1357,9 @@ input:checked + * .nav{
 
 .action_call_text>p {
     /* padding-bottom: 12px; */
-    width: 75%;
+    width: 90%;
     text-align: center;
-    height: 257px;
+    height: 100%;
 }
 
 .action_call_text>.btn {
