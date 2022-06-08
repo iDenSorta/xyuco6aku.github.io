@@ -475,7 +475,7 @@ a[href^="tel"]{
     background-image: url(../img/prices_ellipse.svg);
     background-position: 14px 10px;
     width: 50%;
-    height: 97px;
+    height: 102px;
     background-repeat: no-repeat;
     text-align: left;
     padding-top: 2px;
@@ -744,10 +744,11 @@ a[href^="tel"]{
 }
 
 .contacts_info>h1{
-   padding-right: 120px;
+   /* padding-right: 120px; */
    padding-left: 14px;
    font-weight: 400;
    font-size: 40px;
+   width: 100%;
    color: #2A2A2A;
 }
 
@@ -760,7 +761,7 @@ a[href^="tel"]{
 }
 .contacts_info>h2{
     padding-left: 12px;
-    width: 228px;
+    width: 70%;
     height: 120px;
     text-align: left;
     font-weight: 400;
@@ -791,7 +792,7 @@ a[href^="tel"]{
     margin-top: 6px;
 }
 .contacts_info>h5{
-    width: 332px;
+    width: 90%;
     margin-top: 0%;
     font-size: 16px;
     line-height: 24px;
@@ -810,9 +811,11 @@ a[href^="tel"]{
 @media only screen and (max-width: 420px) {
 
 .wrapper{
-width: 420px;
-margin: auto;
-overflow: hidden;
+    max-width: 420px;
+    min-width: 340px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
 
 }
 .vector-text{
@@ -848,7 +851,7 @@ overflow: hidden;
     
 }
 .header{
-    width: 420px;
+    width: 100%;
 }
 
 .logo-image{
@@ -947,7 +950,7 @@ input:checked + * .nav{
   .banner {
     display: flex;
     width: 91%;
-    height: 880px;
+    height: 890px;
     flex-wrap: wrap;
     flex-direction: column;
     background-image: url(../img/stamp_and_man.svg);
@@ -960,13 +963,14 @@ input:checked + * .nav{
     justify-content: flex-start;
     align-items: flex-start;
     align-content: stretch;
+
 }
 
   .banner-text {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 440px;
+    height: auto;
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
@@ -1092,7 +1096,7 @@ input:checked + * .nav{
     /* width: 976px; */
     height: 1080px;
     flex-wrap: wrap;
-    margin-bottom: 102px;
+    margin-bottom: 60px;
     align-content: space-around;
 }
 
@@ -1102,24 +1106,28 @@ input:checked + * .nav{
     margin-left: 20px;
     margin-right: 20px;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    align-items: flex-start;
+    align-content: center;
+    align-items: center;
     flex-direction: column-reverse;
+
 }
 
 .services-text-top {
     display: flex;
-    width: 100%;
-    height: 322px;
+    width: auto;
+    height: 359px;
     order: 1;
     align-self: center;
     /* padding: 50px; */
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
     text-align: center;
+    align-items: center;
+    align-content: flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    justify-content: flex-start;
 }
 
 .services-text-top>h1 {
@@ -1131,8 +1139,9 @@ input:checked + * .nav{
 }
 
 .services-text-top>p {
-    height: 124px;
+    height: 138px;
     width: 95%;
+    padding-bottom: 10px;
 }
 
 .services-images-top {
@@ -1145,14 +1154,14 @@ input:checked + * .nav{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 770px;
+    height: 771px;
     width: 90%;
     justify-content: flex-start;
     align-items: center;
     align-content: space-between;
     margin-left: 20px;
     margin-top: -15px;
-    margin-bottom: 125px;
+    margin-bottom: 13px;
 }
 
 .services-text-bottom {
@@ -1185,7 +1194,7 @@ input:checked + * .nav{
 
 .services-text-bottom>h1 {
     font-weight: 400;
-    font-size: 40px;
+    font-size: 9.5vw;
     line-height: 40px;
     width: 100%;
     padding-left: 0;
@@ -1224,13 +1233,13 @@ input:checked + * .nav{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 782px;
+    height: 100%;
     width: 90%;
     margin-left: 20px;
     margin-right: 20px;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    align-content: space-between;
+    align-content: space-around;
 }
 
 .prices_table {
@@ -1248,7 +1257,10 @@ input:checked + * .nav{
     border-radius: 12px;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 5%;
 }
+
+.prices_table {}
 
 .pricestable {
     /* max-width: 518px; */
@@ -1260,7 +1272,7 @@ input:checked + * .nav{
     display: flex;
     order: 2;
     width: 90%;
-    height: 380px;
+    height: 40%;
     /* align-self: center; */
     flex-direction: column;
     flex-wrap: wrap;
@@ -1275,7 +1287,7 @@ input:checked + * .nav{
     /* max-height: 167px; */
     /* min-width: 341px; */
     width: 100%;
-    /* height: 166px; */
+    height: 55%;
     /* align-self: center; */
 }
 
@@ -1305,12 +1317,12 @@ input:checked + * .nav{
     text-align: center;
     margin-top: 22px;
     width: 95%;
-    /* height: 120px; */
+    height: 80%;
 }
 
 .action_call {
     /* padding-top: 58px; */
-    /* margin-top: 60px; */
+    margin-top: 0px;
     margin-right: 20px;
     margin-left: 20px;
     display: flex;
@@ -1385,6 +1397,7 @@ input:checked + * .nav{
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
+    text-align: center;
 }
 
 .feedback_link {
@@ -1435,7 +1448,7 @@ input:checked + * .nav{
     padding-left: 14px;
     padding-top: 24px;
     width: 95%;
-    height: 518px;
+    height: 50%;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
