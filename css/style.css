@@ -631,6 +631,13 @@ a[href^="tel"]{
     align-content: flex-start;
 }
 
+.feedback h3{
+    width: 100%;
+    font-weight: 400;
+    margin-left: 3px;
+
+}
+
 .feedback_unit{
     display: flex;
     padding: -14px;
@@ -2395,6 +2402,48 @@ width: 100%;
 
 }
 
+
+
+#order-banner-choice{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 341px;
+    align-items: center;
+    gap: 24px;
+    justify-content: flex-end;
+    margin-top: 24px;
+
+    
+}
+
+#order-banner-choice h2{
+    width: 100%;
+    margin: 0;
+    font-size: 24px;
+    
+
+}
+
+
+#order-banner-choice .btn{
+
+    background-color: #5EBB99;
+    border-radius: 12px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 12px 32px;
+    gap: 10px;
+    text-decoration: none;
+
+
+}
+
+
+
 @media only screen and (max-width: 420px){
    
 .form-data{
@@ -2601,6 +2650,21 @@ input:focus, textarea:focus{
     background-size: contain;
 }
 
+#order-banner-choice{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 341px;
+    align-items: center;
+    gap: 24px;
+    justify-content: flex-end;
+    margin-top: -42px;
+
+    
+}
+
+
 #sumup-numsub {
     display: flex;
     width: 100%;
@@ -2610,6 +2674,17 @@ input:focus, textarea:focus{
     align-items: center;
     justify-content: space-between;
     align-content: center;
+
+    
+}
+}
+.btn:hover,
+#order-banner-choice .btn:hover,
+#sub-btn:hover{
+    background-color: #408068;
+    transition: 0.2s;
 }
 
+input#file-input + label:hover{
+    background-color: #233e68;
 }
