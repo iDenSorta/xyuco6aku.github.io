@@ -48,171 +48,211 @@
             </div>
         </section>
         <section class="form-data">
-        <form action="#" method="post" enctype="multipart/form-data">
-            <div id="name-flex">
-                <h2>Правовая форма*</h2><h2>Город регистрации*</h2>
-            </div>
-            <div id="text-input">
-                <input type="text" id="short-form" name="legal-form" value="">
-                <input type="text" id="short-form" name="city" value="">
-            </div>
-            <div id="name-flex" style="margin-top: 10px">
-                <h2>Название организации или ФИО*</h2>
-            </div>
-            <div id="text-input">
-                <input type="text" id="long-form"  name="name" value="">
-            </div>
-            <div id="name-flex">
-                <h2>ИНН*</h2><h2>ОГРН (ИП)*</h2>
-            </div>
-            <div id="text-input">
-                <input type="tel" id="short-form" name="INN" pattern="[0-9]{10,12}" value="">
-                <input type="tel" id="short-form" name="OGRP" value="">
-            </div>
-            <div id="name-flex">
-                <h2>Адрес электронной почты*</h2><h2>Телефон*</h2>
-            </div>
-            <div id="text-input">
-                <input type="email" id="short-form" name="email" value="">
-                <input type="tel" id="short-form" name="tel" value="">
-            </div>
-            <div id="name-flex" style="margin-top: 54px; margin-bottom: 12px;">
-                <h1>Оснастка</h1>
-            </div>
-            <div class="checkboxes">
-                <script src="/js/checkbox.js" defer></script>
-               <div id="main_container">
-                    <h2>Без оснастки</h2>
-                    <div class="container" id="container_wo">
+            <form id="form-main" action="#" method="post" enctype="multipart/form-data">
+                <div id="form-flex-input">
+                    <div id="form-cell">
+                        <div id="name-flex">
+                            <h2>Правовая форма*</h2>
+                        </div>
+                        <div id="text-input">
+                            <input type="text" id="short-form" name="legal-form" value="">
+                        </div>
+                    </div>
+                    <div id="form-cell">
+                        <div id="name-flex">
+                            <h2>Город регистрации*</h2>
+                        </div>
+                        <div id="text-input">
+                            <input type="text" id="short-form" name="city" value="">
+                        </div>
+                    </div>
+
+                    <div id="form-cell-long">
+                        <div id="name-flex" style="margin-top: 10px">
+                            <h2>Название организации или ФИО*</h2>
+                        </div>
+                        <div id="text-input">
+                            <input type="text" id="long-form"  name="name" value="">
+                        </div>
+                    </div>
+
+                    <div id="form-cell">
+                        <div id="name-flex">
+                            <h2>ИНН*</h2>
+                        </div>
+                        <div id="text-input">
+                            <input type="tel" id="short-form" name="INN" pattern="[0-9]{10,12}" value="">
+                        </div>
+                    </div>
+
+                    <div id="form-cell">
+                        <div id="name-flex">
+                            <h2>ОГРН (ИП)*</h2>
+                        </div>
+                        <div id="text-input">
+                            <input type="tel" id="short-form" name="OGRP" value="">
+                        </div>
+                    </div>
+
+                    <div id="form-cell">
+                        <div id="name-flex">
+                            <h2>Адрес электронной почты*</h2>
+                        </div>
+                        <div id="text-input">
+                            <input type="email" id="short-form" name="email" value="">
+                        </div>
+                    </div>
+
+                    <div id="form-cell">
+                        <div id="name-flex">
+                            <h2>Телефон*</h2>
+                        </div>
+                        <div id="text-input">
+                            <input type="tel" id="short-form" name="tel" value="">
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div id="name-flex" style="margin-top: 54px; margin-bottom: 12px;">
+                    <h1>Оснастка</h1>
+                </div>
+                <div class="checkboxes">
+                    <script src="/js/checkbox.js" defer></script>
+                <div id="main_container">
+                        <h2>Без оснастки</h2>
+                        <div class="container" id="container_wo">
+                            <p>
+                                    <label class="label">
+                                    <input type="radio" id="wo" checked name="type" value="wo">
+                                    <span class="custom-btn"></span>
+                                    </label>
+                            </p>      
+                        </div>
+                    </div> 
+
+                    <div id="main_container">
+                        <h2>Ручная</h2>
+                    <div class="container" id="container_manual">
                         <p>
                                 <label class="label">
-                                <input type="radio" id="wo" checked name="type" value="wo">
+                                <input type="radio" id="container_manual_btn" value="manual" name="type">
                                 <span class="custom-btn"></span>
                                 </label>
                         </p>      
                     </div>
-                </div> 
-
-                <div id="main_container">
-                    <h2>Ручная</h2>
-                <div class="container" id="container_manual">
-                    <p>
-                            <label class="label">
-                            <input type="radio" id="container_manual_btn" value="manual" name="type">
-                            <span class="custom-btn"></span>
-                            </label>
-                    </p>      
-                </div>
-                </div>
-                <div id="main_container">
-                    <h2>Автомат</h2>
-                <div class="container" id="container_auto">
-                    <p>
-                            <label class="label">
-                            <input type="radio" id="auto" value = "auto" name="type">
-                            <span class="custom-btn"></span>
-                            </label>
-                    </p>      
-                </div>
-                </div>
-                <div id="main_container">
-                
-                    <h2>Colop Mouse R40</h2>
-                <div class="container" id="container_R40">
-                    <p>
-                            <label class="label">
-                            <input type="radio" id="R40" name="type" value="R40">
-                            <span class="custom-btn"></span>
-                            </label>
-                    </p>      
-                </div>
-                </div>
-                </div>
-                    <div id="order_time_payment">
-                        <div id="name-flex">
-                            <h1>Способы оплаты</h1>   
-                        </div>
-                        <div id="container_2radio_style">
-                            <script src="/js/btn_payment.js" defer></script>
-                                <div class="container" id="container_2radio_cash">
+                    </div>
+                    <div id="main_container">
+                        <h2>Автомат</h2>
+                    <div class="container" id="container_auto">
+                        <p>
+                                <label class="label">
+                                <input type="radio" id="auto" value = "auto" name="type">
+                                <span class="custom-btn"></span>
+                                </label>
+                        </p>      
+                    </div>
+                    </div>
+                    <div id="main_container">
+                    
+                        <h2>Colop Mouse R40</h2>
+                    <div class="container" id="container_R40">
+                        <p>
+                                <label class="label">
+                                <input type="radio" id="R40" name="type" value="R40">
+                                <span class="custom-btn"></span>
+                                </label>
+                        </p>      
+                    </div>
+                    </div>
+                    </div>
+                        <div id="order_time_payment">
+                            <div id="name-flex">
+                                <h1>Способы оплаты</h1>   
+                            </div>
+                            <div id="container_2radio_style">
+                                <script src="/js/btn_payment.js" defer></script>
+                                    <div class="container" id="container_2radio_cash">
+                                        <p>
+                                            <label class="label">
+                                                <input type="radio" checked id="cash" name="small-btn-payment" value="cash">
+                                                <span class="custom-btn-small" id="btn-cash"></span>
+                                                <span>Наличными</span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                
+                                <div class="container" id="container_2radio_check">
+                                    
                                     <p>
                                         <label class="label">
-                                            <input type="radio" checked id="cash" name="small-btn-payment" value="cash">
-                                            <span class="custom-btn-small" id="btn-cash"></span>
-                                            <span>Наличными</span>
+                                                <input type="radio" id="check" name="small-btn-payment" value="check">
+                                                <span class="custom-btn-small" id="btn-check"></span>
+                                                <span>Выставить счёт</span>
                                         </label>
                                     </p>
                                 </div>
-                            
-                            <div class="container" id="container_2radio_check">
-                                
-                                <p>
+                                <div id="order_img"></div>
+                            </div>
+                            <div id="name-flex">
+                                <h1>Сроки изготовления</h1>
+                            </div>
+                        <div id="container_2radio_style">
+                            <script src="/js/btn_time.js" defer></script>
+                                <div class="container" id="container_2radio_urgent">
+                                            <p>
+                                                <label class="label">
+                                                    <input type="radio" id="urgent" name="small-btn-time" value="urgent">
+                                                    <span class="custom-btn-small" id="btn-urgent"></span>
+                                                    <span>Срочно(1 час)</span>
+                                                </label>
+                                            </p>
+                                </div>
+                                <div class="container" id="container_2radio_regular">
+                                    
+                                    <p>
                                     <label class="label">
-                                            <input type="radio" id="check" name="small-btn-payment" value="check">
-                                            <span class="custom-btn-small" id="btn-check"></span>
-                                            <span>Выставить счёт</span>
-                                    </label>
-                                </p>
-                            </div>
-                            <div id="order_img"></div>
-                        </div>
-                        <div id="name-flex">
-                            <h1>Сроки изготовления</h1>
-                        </div>
-                    <div id="container_2radio_style">
-                        <script src="/js/btn_time.js" defer></script>
-                            <div class="container" id="container_2radio_urgent">
-                                        <p>
-                                            <label class="label">
-                                                <input type="radio" id="urgent" name="small-btn-time" value="urgent">
-                                                <span class="custom-btn-small" id="btn-urgent"></span>
-                                                <span>Срочно(1 час)</span>
-                                            </label>
+                                            <input type="radio" id="regular" checked name="small-btn-time" value="regular">
+                                            <span class="custom-btn-small" id="btn-regular"></span>
+                                            <span id="span-next-day">На следующий день с 9:30</span>
+                                        </label>
                                         </p>
-                            </div>
-                            <div class="container" id="container_2radio_regular">
                                 
-                                <p>
-                                <label class="label">
-                                        <input type="radio" id="regular" checked name="small-btn-time" value="regular">
-                                        <span class="custom-btn-small" id="btn-regular"></span>
-                                        <span>На следующий день с 9:30</span>
-                                    </label>
-                                    </p>
-                            
+                                </div>
                             </div>
                         </div>
+                    
+                    <div id="comment">
+                        <div id="name-comment">
+                            <h3 id="comment-text">Комментарий к заказу</h3>
+                        </div>
+                        <textarea name="comment"></textarea>
                     </div>
-                <div id="name-flex">
-                    <h3>Комментарий к заказу</h3>
-                </div>
-                <div>
-                    <textarea name="comment" style="width: 925px; height: 132px; padding: 24px; " ></textarea>
-                </div>
-                <div id="name-flex">
-                    <h4>Прикрепить файл</h4>
-                </div>
-                <div id="div-file">
-                    <input type="file" name="file" id="file-input"><label for="file-input">Выберите файл</label>
-                    <span id="file-name"></span>
+                    <div id="div-file">
+                    <div id="name-flex">
+                        <h4>Прикрепить файл</h4>
+                    </div>
                     
-                </div>
-                <script src="js/fileButton.js"></script>
-            
-                <div id="sumup-banner" >
-                    
-                    <div id="sumup-img"></div>
-                    <div id="sumup-numsub">
-                        <div>
-                            <span id="sumup-text">Итого:</span><span id="sumup-number"> 300р</span>
-                        </div>
-                        <div>
-                        <button id="sub-btn" type="submit">Заказать</button>
-                        </div>
-                    </div> 
-                </div>
+                        <input type="file" name="file" id="file-input"><label for="file-input">Выберите файл</label>
+                        <span id="file-name"></span>
+                        
+                    </div>
+                    <script src="js/fileButton.js"></script>
+                
+                    <div id="sumup-banner" >
+                        
+                        <div id="sumup-img"></div>
+                        <div id="sumup-numsub">
+                            <div>
+                                <span id="sumup-text">Итого:</span><span id="sumup-number"> 300р</span>
+                            </div>
+                            <div>
+                            <button id="sub-btn" type="submit">Заказать</button>
+                            </div>
+                        </div> 
+                    </div>
 
-        </form>
+            </form>
         </section>
          <section class="contacts">
                 <div class="contacts_map">
