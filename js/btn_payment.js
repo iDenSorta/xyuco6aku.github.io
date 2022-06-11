@@ -1,14 +1,11 @@
-var radio = document.getElementsByName('type');
+var radio = document.getElementsByName('small-btn-payment');
  testRadio();
 for (var i=0; i<radio.length; i++) {
     radio[i].onchange = testRadio;
-    console.log(radio[i]);
-    
-    
 }
 
 function testRadio(){
-    var m = document.getElementsByName('type');
+    var m = document.getElementsByName('small-btn-payment');
         for(var i=0; i<m.length;i++){
             
             par = (document.getElementById(m[i].id).parentElement.parentElement.parentElement.id);
@@ -16,17 +13,17 @@ function testRadio(){
             
             stu = document.getElementById(par);
             
-
+            
             if (m[i].checked){
 
                 
     
-                stu.style.border = "4px solid #5EBB99";
+                stu.style.border = "2px solid #5EBB99";
             }
                
             else {
                 
-                stu.style.border = "4px solid #87B4E1";
+                stu.style.border = "2px solid #87B4E1";
                 
                 
 
@@ -35,3 +32,4 @@ function testRadio(){
 }
 
 }
+

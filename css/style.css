@@ -104,7 +104,7 @@ a[href^="tel"]{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    padding-top: 18px;
+    padding-top: 28px;
     flex-direction: row;
     text-align: center;
     justify-content: center;
@@ -775,6 +775,7 @@ a[href^="tel"]{
     font-size: 28px;
     line-height: 42px;
     text-decoration-line: underline;
+    text-underline-position: under;
     color: #EB990F;
     padding-left: 18px;
     /* padding-bottom: 20px; */
@@ -1929,6 +1930,13 @@ display: none;
 
 }
 
+.custom-btn::after{
+    content: ' ';
+    position: absolute;
+    padding: 105px;
+    transform: translate(-95%, -5%);
+}
+
 [type="radio"]:checked + .custom-btn::before,
 [type="radio"]:checked + .custom-btn-small::before{
     opacity: 1;
@@ -1963,6 +1971,7 @@ display: none;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 53px;
 }
 
 .container {
@@ -1974,6 +1983,7 @@ display: none;
     justify-content: flex-end;
     align-items: flex-start;
     padding: 12px;
+    padding-top: 0px;
     align-content: stretch;
     z-index: 1;
 }
@@ -2010,12 +2020,29 @@ display: none;
 
 }
 
-div#name-flex {
+
+
+
+
+
+
+#name-flex {
     display: flex;
     justify-content: left;
     width: 100%;
     gap: 18px;
     margin-left: 0px;
+}
+
+#name-flex h1{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    gap: 18px;
+    margin-left: 0px;
+    margin-bottom: 27px;
+    margin-top: 14px;
+    letter-spacing: 3px;
 }
 
 div#text-input{
@@ -2026,13 +2053,25 @@ div#text-input{
 
 input, textarea{
     border: 2px solid #87B4E1;
-    height: 53px;
+    height: 41px;
     border-radius: 12px;
     font-size: 24px;
+    padding: 6px;
 }
 
+input:focus, textarea:focus{
+    border: 2px solid #5EBB99;
+    height: 41px;
+    border-radius: 12px;
+    font-size: 24px;
+    padding: 6px;
+    outline: none;
+}
+
+
+
 input#short-form{
-    width: 475px;
+    width: 463px;
 }
 
 input#long-form{
@@ -2053,20 +2092,20 @@ div>h2{
 #container_2radio_urgent,
 #container_2radio_regular{
     display: flex;
-    height: fit-content;
+    height: 54px;
     width: fit-content;
     border: 2px solid #87B4E1;
     border-radius: 12px;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
     align-content: stretch;
     z-index: 1;
     text-align: right;
     font-size: 20px;
     line-height: 24px;
     padding: 0px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
 .custom-btn-small {
@@ -2122,8 +2161,12 @@ div>h2{
 #container_2radio_style{
     display: flex;
     justify-content: flex-start;
-    gap: 24px;
+    gap: 12px;
     flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 64px;
 }
 
 #file{
@@ -2172,20 +2215,22 @@ input[type="file"]{
 
 #order_img{
     background-image: url(../img/services_girl.svg);
-    width: 288px;
-    height: 428px;
+    width: 326px;
+    height: 396px;
     margin-bottom: -440px;
     padding-top: 100p;
     z-index: 2;
-    margin-top: 34px;
-    margin-left: 213px;
+    margin-top: -18px;
+    margin-left: 187px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.form-data h1{
+.form-data h1, h2, h3, h4{
 
 width: 40%;
+font-weight: 400;
+margin-left: 3px;
 }
 
 #main_container{
@@ -2195,11 +2240,13 @@ width: 40%;
     /* gap: 20px; */
     align-content: space-around;
     flex-direction: column;
+    height: 285px;
 
 }
 
 .checkboxes h2{
     width: 100%;
+    height: 17px;
 }
 
 input#file-input{
@@ -2223,16 +2270,17 @@ input#file-input{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-top: -12px;
     
 }
 input#file-input + label{
-    padding: 16px 32px;
-    gap: 10px;
+    padding: 0px 0px;
+    /* gap: 7px; */
     width: 180px;
     height: 46px;
     background: #3A6AB2;
     border-radius: 12px;
-    margin-right: 24px;
+    margin-right: 19px;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
@@ -2241,20 +2289,23 @@ input#file-input + label{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #sumup-img{
     background-repeat: no-repeat;
-    width: 65%;
+    width: 75%;
     height: 222px;
     background-image: url(../img/order_sumup.svg);
+
 }
 
 #sumup-banner{
     display: flex;
     width: 100%;
     height: fit-content;
-
+    margin-top: 62px;
+    margin-bottom: -16px;
 }
 
 #sumup-numsub{
@@ -2289,7 +2340,7 @@ input#file-input + label{
     cursor: pointer;
     color: #ffffff;
     font-size: 14px;
-    padding: 35px 73px;
+    padding: 38px 73px;
     gap: 10px;
     text-decoration: none;
     font-weight: 400;
@@ -2309,4 +2360,8 @@ input#file-input + label{
     padding: 12px;
     align-content: stretch;
     z-index: 0;
+}
+
+#order_time_payment{
+    margin-bottom: 48px;
 }
