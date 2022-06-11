@@ -77,110 +77,140 @@
                 <input type="tel" id="short-form" name="tel" value="">
             </div>
             <div id="name-flex">
-                <h2>Оснастка</h2>
+                <h1>Оснастка</h1>
             </div>
             <div class="checkboxes">
-                <div class="container" id="container_wo">
-                    <p>
-                            <label class="label">
-                            <input type="radio" id="wo" checked name="type">
-                            <span class="custom-btn"></span>
-                            </label>
-                    </p>      
-                </div>
+                <script src="/js/order_css - Copy.js" defer></script>
+               <div id="main_container">
+                    <h2>Без оснастки</h2>
+                    <div class="container" id="container_wo">
+                        <p>
+                                <label class="label">
+                                <input type="radio" id="wo" checked name="type" value="wo">
+                                <span class="custom-btn"></span>
+                                </label>
+                        </p>      
+                    </div>
+                </div> 
+
+                <div id="main_container">
+                    <h2>Ручная</h2>
                 <div class="container" id="container_manual">
                     <p>
                             <label class="label">
-                            <input type="radio" id="container_manual" name="type">
+                            <input type="radio" id="container_manual_btn" value="manual" name="type">
                             <span class="custom-btn"></span>
                             </label>
                     </p>      
                 </div>
+                </div>
+                <div id="main_container">
+                    <h2>Автомат</h2>
                 <div class="container" id="container_auto">
                     <p>
                             <label class="label">
-                            <input type="radio" id="auto" name="type">
+                            <input type="radio" id="auto" value = "auto" name="type">
                             <span class="custom-btn"></span>
                             </label>
                     </p>      
                 </div>
+                </div>
+                <div id="main_container">
+                
+                    <h2>Colop Mouse R40</h2>
                 <div class="container" id="container_R40">
                     <p>
                             <label class="label">
-                            <input type="radio" id="R40" name="type">
+                            <input type="radio" id="R40" name="type" value="R40">
                             <span class="custom-btn"></span>
                             </label>
                     </p>      
                 </div>
-            </div>
-            <div id="name-flex">
-                <h2>Способы оплаты</h2>
+                </div>
+                </div>
                 
-            </div>
-            <div id="container_2radio_style">
-                    <div class="container" id="container_2radio">
+                <div id="name-flex">
+                    <h1>Способы оплаты</h1>
+                    
+                </div>
+                <div id="container_2radio_style">
+                    <script src="/js/order_css.js" defer></script>
+                        <div class="container" id="container_2radio_cash">
+                            <p>
+                                <label class="label">
+                                    <input type="radio" id="cash" name="small-btn" value="cash">
+                                    <span class="custom-btn-small" id="btn-cash"></span>
+                                    <span>Наличными</span>
+                                </label>
+                            </p>
+                        </div>
+                    
+                    <div class="container" id="container_2radio_check">
+                        
                         <p>
                             <label class="label">
-                                <input type="radio" name="payment" value="cash">
-                                <span class="custom-btn-small" id="btn-cash"></span>
-                                <span>Наличными</span>
+                                    <input type="radio"  id="check" checked name="small-btn" value="check">
+                                    <span class="custom-btn-small" id="btn-check"></span>
+                                    <span>Выставить счёт</span>
                             </label>
                         </p>
                     </div>
-                
-                <div class="container" id="container_2radio">
-                    
-                    <p>
-                        <label class="label">
-                                <input type="radio" checked name="payment" value="check">
-                                <span class="custom-btn-small" id="btn-check"></span>
-                                <span>Выставить счёт</span>
-                        </label>
-                    </p>
+                    <div id="order_img"></div>
                 </div>
-                <div id="order_img"></div>
-            </div>
-            <div id="name-flex">
-                <h2>Сроки изготовления</h2>
-            </div>
+                <div id="name-flex">
+                    <h1>Сроки изготовления</h1>
+                </div>
             <div id="container_2radio_style">
-                <div class="container" id="container_2radio">
+                    <div class="container" id="container_2radio_urgent">
+                                <p>
+                                    <label class="label">
+                                        <input type="radio" id="urgent" name="small-btn" value="urgent">
+                                        <span class="custom-btn-small" id="btn-urgent"></span>
+                                        <span>Срочно(1 час)</span>
+                                    </label>
+                                </p>
+                    </div>
+                    <div class="container" id="container_2radio_regular">
+                        
                         <p>
-                            <label class="label">
-                                <input type="radio" name="time" value="urgent">
-                                <span class="custom-btn-small" id="btn-urgent"></span>
-                                <span>Срочно(1 час)</span>
+                        <label class="label">
+                                <input type="radio" id="regular" checked name="small-btn" value="regular">
+                                <span class="custom-btn-small" id="btn-regular"></span>
+                                <span>На следующий день с 9:30</span>
                             </label>
-                        </p>
-                </div>
-                <div class="container" id="container_2radio">
+                            </p>
                     
-                    <p>
-                    <label class="label">
-                            <input type="radio" checked name="time" value="regular">
-                            <span class="custom-btn-small" id="btn-regular"></span>
-                            <span>На следующий день с 9:30</span>
-                        </label>
-                        </p>
-                
+                    </div>
                 </div>
-            </div>
-            <div id="name-flex">
-                <h3>Комментарий к заказу</h3>
-            </div>
-            <div>
-                <textarea name="comment" style="width: 973px; height: 180px; " ></textarea>
-            </div>
-            <div id="name-flex">
-                <h4>Прикрепить файл</h4>
-            </div>
-            <div>
-                <input type="file" name="file" id="file"><label for="file">Выберите файл</label>
-            </div>
+                <div id="name-flex">
+                    <h3>Комментарий к заказу</h3>
+                </div>
+                <div>
+                    <textarea name="comment" style="width: 973px; height: 180px; " ></textarea>
+                </div>
+                <div id="name-flex">
+                    <h4>Прикрепить файл</h4>
+                </div>
+                <div id="div-file">
+                    <input type="file" name="file" id="file-input"><label for="file-input">Выберите файл</label>
+                    <span id="file-name"></span>
+                    
+                </div>
+                <script src="js/fileButton.js"></script>
             
-            <div>
-                <button type="submit">Заказать</button>
-            </div>
+                <div id="sumup-banner" >
+                    
+                    <div id="sumup-img"></div>
+                    <div id="sumup-numsub">
+                        <div>
+                            <span id="sumup-text">Итого:</span><span id="sumup-number"> 300р</span>
+                        </div>
+                        <div>
+                        <button id="sub-btn" type="submit">Заказать</button>
+                        </div>
+                    </div> 
+                </div>
+
         </form>
         </section>
          <section class="contacts">
