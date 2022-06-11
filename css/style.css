@@ -104,7 +104,7 @@ a[href^="tel"]{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    padding-top: 18px;
+    padding-top: 28px;
     flex-direction: row;
     text-align: center;
     justify-content: center;
@@ -631,6 +631,13 @@ a[href^="tel"]{
     align-content: flex-start;
 }
 
+.feedback h3{
+    width: 100%;
+    font-weight: 400;
+    margin-left: 3px;
+
+}
+
 .feedback_unit{
     display: flex;
     padding: -14px;
@@ -775,6 +782,7 @@ a[href^="tel"]{
     font-size: 28px;
     line-height: 42px;
     text-decoration-line: underline;
+    text-underline-position: under;
     color: #EB990F;
     padding-left: 18px;
     /* padding-bottom: 20px; */
@@ -1929,6 +1937,13 @@ display: none;
 
 }
 
+.custom-btn::after{
+    content: ' ';
+    position: absolute;
+    padding: 105px;
+    transform: translate(-95%, -5%);
+}
+
 [type="radio"]:checked + .custom-btn::before,
 [type="radio"]:checked + .custom-btn-small::before{
     opacity: 1;
@@ -1956,44 +1971,31 @@ display: none;
     z-index: 2;
 }
 
-.custom-btn::after,
-.custom-btn-small::after {
-    content: "";
-    position: absolute;
-    display: block;
-    /* background-color: #E64447; */
-    width: calc(910px / 4);
-    height: 268px;
-    border: 4px solid #5EBB99;
-    border-radius: 24px;
-    background: none;
-    opacity: 1;
-    transform: translate(-83%, -12%);
-    transition: 0.2s;
-    opacity: 0;
-    transition: 0.2s;
-    z-index: 0;
-}
+
 
 .checkboxes{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 53px;
 }
 
 .container {
     display: flex;
-    width: 20%;
-    height: 236px;
+    width: 2;
+    height: 215px;
     border: 4px solid #87B4E1;
     border-radius: 24px;
     justify-content: flex-end;
     align-items: flex-start;
     padding: 12px;
+    padding-top: 0px;
     align-content: stretch;
     z-index: 1;
 }
 
-.container#container_wo{
+#container_wo{
     background-image: url(../img/order_wo.svg);
     background-repeat: no-repeat;
     background-size: 80%;
@@ -2001,7 +2003,7 @@ display: none;
 
 }
 
-.container#container_manual{
+#container_manual{
     background-image: url(../img/order_manual.svg);
     background-repeat: no-repeat;
     background-size: 80%;
@@ -2009,7 +2011,7 @@ display: none;
 
 }
 
-.container#container_auto{
+#container_auto{
     background-image: url(../img/order_auto.svg);
     background-repeat: no-repeat;
     background-size: 50%;
@@ -2017,7 +2019,7 @@ display: none;
 
 }
 
-.container#container_R40{
+#container_R40{
     background-image: url(../img/order_R40.svg);
     background-repeat: no-repeat;
     background-size: 80%;
@@ -2025,10 +2027,29 @@ display: none;
 
 }
 
-div#name-flex{
+
+
+
+
+
+
+#name-flex {
     display: flex;
     justify-content: left;
-    width: 100%986px;
+    width: 100%;
+    gap: 18px;
+    margin-left: 0px;
+}
+
+#name-flex h1{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    gap: 18px;
+    margin-left: 0px;
+    margin-bottom: 27px;
+    margin-top: 14px;
+    letter-spacing: 3px;
 }
 
 div#text-input{
@@ -2039,13 +2060,27 @@ div#text-input{
 
 input, textarea{
     border: 2px solid #87B4E1;
-    height: 59px;
+    height: 41px;
     border-radius: 12px;
     font-size: 24px;
+    padding: 6px;
 }
 
+input:focus, textarea:focus{
+    border: 2px solid #5EBB99;
+    border-radius: 12px;
+    font-size: 24px;
+    padding: 6px;
+    outline: none;
+}
+
+input:focus{
+    height: 41px;
+}
+
+
 input#short-form{
-    width: 475px;
+    width: 463px;
 }
 
 input#long-form{
@@ -2053,7 +2088,7 @@ input#long-form{
 }
 
 div>h2{
-    width: 100%;
+    width: 90%;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -2061,22 +2096,25 @@ div>h2{
 }
 
 
-.container#container_2radio  {
+#container_2radio_check,
+#container_2radio_cash,
+#container_2radio_urgent,
+#container_2radio_regular{
     display: flex;
-    height: fit-content;
+    height: 54px;
     width: fit-content;
     border: 2px solid #87B4E1;
     border-radius: 12px;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
     align-content: stretch;
     z-index: 1;
     text-align: right;
     font-size: 20px;
     line-height: 24px;
     padding: 0px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
 .custom-btn-small {
@@ -2132,8 +2170,12 @@ div>h2{
 #container_2radio_style{
     display: flex;
     justify-content: flex-start;
-    gap: 24px;
-
+    gap: 12px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 64px;
 }
 
 #file{
@@ -2168,28 +2210,481 @@ input[type="file"]{
 
 #order_banner{
     width: 100%;
-    height: 365px;
+    height: 445px;
     background-image: url(../img/order_banner.svg);
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: stretch;
     flex-wrap: wrap;
-    margin-bottom: 35px;
+    margin-bottom: -19px;
     background-position: center;
-    
 }
 
 
 #order_img{
     background-image: url(../img/services_girl.svg);
-    width: 288px;
-    height: 428px;
+    width: 326px;
+    height: 396px;
     margin-bottom: -440px;
     padding-top: 100p;
     z-index: 2;
-    margin-top: 34px;
-    margin-left: 213px;
+    margin-top: -18px;
+    margin-left: 187px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.form-data h1, h2, h3, h4{
+
+width: 40%;
+font-weight: 400;
+margin-left: 3px;
+}
+
+#main_container{
+    display: flex;
+    width: 235px;
+    text-align: center;
+    /* gap: 20px; */
+    align-content: space-around;
+    flex-direction: column;
+    height: 285px;
+
+}
+
+.checkboxes h2{
+    width: 100%;
+    height: 17px;
+}
+
+input#file-input{
+    display: none;
+}
+
+#file-name{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    color: #AAAAAA;
+}
+
+#div-file{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 12px;
+    
+}
+input#file-input + label{
+    padding: 0px 0px;
+    /* gap: 7px; */
+    width: 180px;
+    height: 46px;
+    background: #3A6AB2;
+    border-radius: 12px;
+    margin-right: 19px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#sumup-img{
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 222px;
+    background-image: url(../img/order_sumup.svg);
+
+}
+
+#sumup-banner{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin-top: 62px;
+    margin-bottom: -16px;
+}
+
+#sumup-numsub{
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#sumup-text{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+
+    color: #2A2A2A;
+}
+
+#sumup-number{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    color: #EB990F;
+}
+
+#sub-btn{
+    background-color: #5EBB99;
+    border-radius: 29px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 38px 73px;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 33px;
+    border: 2px solid;
+}
+
+.cont{
+    display: flex;
+    width: 2;
+    height: 215px;
+    border: 4px solid #5EBB99;
+    border-radius: 24px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 12px;
+    align-content: stretch;
+    z-index: 0;
+}
+
+#order_time_payment{
+    margin-bottom: 48px;
+}
+
+
+#form-cell-long{
+    width: 100%;
+}
+
+#form-cell{
+    width: 49%;
+}
+
+#form-flex-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+textarea{
+    width: 98%;
+    height: 300px;
+    resize: none;
+}
+
+#comment{
+
+width: 100%;
+
+}
+
+
+
+#order-banner-choice{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 341px;
+    align-items: center;
+    gap: 24px;
+    justify-content: flex-end;
+    margin-top: 24px;
+
+    
+}
+
+#order-banner-choice h2{
+    width: 100%;
+    margin: 0;
+    font-size: 24px;
+    
+
+}
+
+
+#order-banner-choice .btn{
+
+    background-color: #5EBB99;
+    border-radius: 12px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 12px 32px;
+    gap: 10px;
+    text-decoration: none;
+
+
+}
+
+
+
+@media only screen and (max-width: 420px){
+   
+.form-data{
+
+    display: flex;
+    margin-left: 12px;
+    margin-right: 12px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+        
+#form-flex-input{
+    display: flex;
+}
+#form-main{
+    width: 100%;
+}
+
+#name-flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+div#text-input {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#form-cell {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+#form-flex-input {
+    display: flex;
+}
+
+#form-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+}
+
+
+.form-data {
+    display: flex;
+    margin-left: 12px;
+    margin-right: 12px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+}
+
+input#short-form {
+    width: 100%;
+}
+
+#form-cell-long {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+.checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 53px;
+    height: 481px;
+}
+
+#main_container {
+    display: flex;
+    width: 180px;
+    text-align: center;
+    /* gap: 20px; */
+    flex-direction: column;
+    height: 229px;
+}
+
+.custom-btn::after {
+    content: ' ';
+    position: absolute;
+    padding: 72px;
+    transform: translate(-95%, -5%);
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 53px;
+    height: 483px;
+}
+
+#main_container {
+    display: flex;
+    width: 49%;
+    text-align: center;
+    /* gap: 20px; */
+    height: 226px;
+}
+
+.custom-btn::after {
+    content: ' ';
+    position: absolute;
+    padding: 72px;
+    transform: translate(-95%, -5%);
+}
+
+.checkboxes h2 {
+    width: 100%;
+    height: 17px;
+    font-size: 17px;
+}
+
+#order_img{
+    display: none;
+}
+
+#order_time_payment {
+    display: flex;
+    margin-bottom: 48px;
+    flex-direction: column;
+}
+
+textarea{
+    width: 100%;
+}
+
+#comment{
+
+    width: 94%;
+    
+}
+
+#order_time_payment {
+    display: flex;
+    margin-bottom: 48px;
+    flex-direction: column;
+    margin-bottom: -12px;
+}
+
+#span-next-day{
+    font-size: 5vw;
+}
+
+#name-comment{
+    display: flex;
+    justify-content: left;
+
+}
+
+.form-data h3, h4 {
+    width: 100%;
+    font-weight: 400;
+    margin-left: 3px;
+}
+
+input, textarea{
+    font-size: 16px;
+}
+
+input:focus, textarea:focus{
+    font-size: 20px;
+}
+
+#sumup-banner {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin-top: 62px;
+    margin-bottom: -16px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sumup-img {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 166px;
+    background-image: url(../img/order_sumup.svg);
+    background-size: contain;
+}
+
+#order-banner-choice{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 341px;
+    align-items: center;
+    gap: 24px;
+    justify-content: flex-end;
+    margin-top: -42px;
+
+    
+}
+
+
+#sumup-numsub {
+    display: flex;
+    width: 100%;
+    height: 195px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+
+    
+}
+}
+.btn:hover,
+#order-banner-choice .btn:hover,
+#sub-btn:hover{
+    background-color: #408068;
+    transition: 0.2s;
+}
+
+input#file-input + label:hover{
+    background-color: #233e68;
 }
