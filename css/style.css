@@ -1508,84 +1508,84 @@ input:checked + * .nav{
 }
 
 .stamp_001{
-    background-image: url(../img/stamps_ooo_stamp_sample_0_01.svg);
+    background-image: url(/img/sample/ooo/0-01.svg);
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-position-x: center;
 }
 
 .stamp_002{
-    background-image: url(../img/stamps_ooo_stamp_sample_0_02.svg);
+    background-image: url(/img/sample/ooo/0-02.svg);
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-position-x: center;
 }
 
 .stamp_003{
-    background-image: url(../img/stamps_ooo_stamp_sample_0_03.svg);
+    background-image: url(/img/sample/ooo/0-03.svg);
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-position-x: center;
 }
 
 .stamp_0101{
-    background-image: url(../img/stamps_ooo_stamp_sample_0_101.svg);
+    background-image: url(/img/sample/design_ooo/0-101.svg);
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-position-x: center;
 }
 
 .stamp_0102{
-    background-image: url(../img/stamps_ooo_stamp_sample_0_102.svg);
+    background-image: url(/img/sample/design_ooo/0-102.svg);
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-position-x: center;
 }
 
 .stamp_0103{
-    background-image: url(../img/stamps_ooo_stamp_sample_0_103.svg);
+    background-image: url(/img/sample/design_ooo/0-103.svg);
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-position-x: center;
 }
 
 .stamp_ip_001{
-    background-image: url(../img/stamps_ip_stamp_sample_0_01.svg);
+    background-image: url(/img/sample/ip/0-01.svg);
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-position-x: center;
 }
 
 .stamp_ip_002{
-    background-image: url(../img/stamps_ip_stamp_sample_0_02.svg);
+    background-image: url(/img/sample/ip/0-02.svg);
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-position-x: center;
 }
 
 .stamp_ip_003{
-    background-image: url(../img/stamps_ip_stamp_sample_0_03.svg);
+    background-image: url(/img/sample/ip/0-03.svg);
     background-repeat: no-repeat;
     background-position-y: 24px;
     background-position-x: center;
 }
 
 .stamp_dr_b01{
-    background-image: url(../img/stamps_dr_stamp_sample_b_01.svg);
+    background-image: url(/img/sample/dr/B-01.svg);
     background-repeat: no-repeat;
     background-position-y: 34px;
     background-position-x: 8px;
 }
 
 .stamp_dr_b05{
-    background-image: url(../img/stamps_dr_stamp_sample_b_05.svg);
+    background-image: url(/img/sample/dr/B-04.svg);
     background-repeat: no-repeat;
     background-position-y: 22px;
     background-position-x: 8px;
 }
 
 .stamp_dr_b04{
-    background-image: url(../img/stamps_dr_stamp_sample_b_04.svg);
+    background-image: url(/img/sample/dr/B-05.svg);
     background-repeat: no-repeat;
     background-position-y: 22px;
     background-position-x: 8px;
