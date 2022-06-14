@@ -7,7 +7,7 @@ const h2 = document.createElement('h2');
 console.log(myParamsType);
 console.log(myParamsNumber);
 
-image.src = '/img/sample/' + myParamsType + '/' + myParamsNumber + '.svg'
+image.src = '../img/sample/' + myParamsType + '/' + myParamsNumber + '.svg'
 document.querySelector('#banner-img').appendChild(image);
 console.log(myParamsType === 'ip');
 
