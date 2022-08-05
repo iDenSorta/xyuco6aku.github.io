@@ -5,12 +5,24 @@ body{
          url('igrasans.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    background-color:#E5E5E5;
+    background-color: white;
     font-size: 14px;
     line-height: 24px;
-    max-width: 1024px;
+    
     margin: auto;
     height: 100%;
+}
+
+.wow{
+    opacity: 0;
+    transform: translateY(-8px);
+    
+}
+
+.wow.animated {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s .5s;
 }
 
 img{
@@ -22,6 +34,20 @@ a[href^="tel"]{
     color:inherit;
     text-decoration:none;
 }
+
+a[href^="mailto"]{
+    color:inherit;
+    text-decoration:none;
+}
+
+a[href^="tel"]:hover,
+a[href^="mailto"]:hover{
+
+	color: #5EBB99;
+	transition: .3s;
+
+}
+
 
 #menu__toggle {
     opacity: 0;
@@ -48,8 +74,8 @@ a[href^="tel"]{
     /* padding-right: 0%; */
     gap: 20px;
     padding-right: 12px;
-    padding-bottom: 6px;
-    
+	 padding-bottom: 6px;
+     
 }
 
 .nav> li{
@@ -62,8 +88,14 @@ a[href^="tel"]{
     color: #2A2A2A;
     font-weight: 400;
     font-size: 14px;
-    line-height: 14px
+    line-height: 14px;
+    
 }
+
+.nav> li> a:hover{
+    text-underline-position:under;
+}
+
 
 .header{
     display: flex;
@@ -100,16 +132,25 @@ a[href^="tel"]{
     display: flex;
     color: #FFFFFF;
     font-style: normal;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     padding-top: 28px;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     min-width: 260px;
    
+}
+
+.vector-text>a[href^="tel"]:hover,
+.vector-text>a[href^="mailto"]:hover{
+
+	text-decoration: underline;
+	text-underline-position: under;
+	color: #FFFFFF;
+	transition: .3s;
+
 }
 
 .banner{
@@ -217,33 +258,34 @@ a[href^="tel"]{
     justify-content: center;
 }
 .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color:#5EBB99;
 	border-radius:12px;
-	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-size:14px;
 	padding:13px 52px;
-    gap: 10px;
-	text-decoration:none;
+    text-decoration:none;
     
 }
 
 
 .stamps{
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-left: 24px;
+    margin-right: 24px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    /* width: 976px; */
+    justify-content: space-between;
+    width: auto;
     height: 372px;
     flex-wrap: wrap;
     margin-bottom: 119px;
 }
 
 .stamps_h1>h1{
-    margin-left: 21px;
+    margin-left: 24px;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -276,6 +318,14 @@ a[href^="tel"]{
     align-items: flex-start;
     /* padding-left: 20px;*/
 }
+
+.stamp:hover{
+	outline: 4px solid #5EBB99;
+    outline-offset: -2px;
+}
+
+
+
 .stamp>h1{
     display: flex;
     font-style: normal;
@@ -340,11 +390,10 @@ a[href^="tel"]{
 }
 .stamps_doctors{
     display: flex;
-    /* width: 254px; */
-    height: 76px;
+    height: fit-content;
     flex-direction: row;
     align-items: flex-end;
-    /* margin-right: 16px;*/
+    
 }
 .stamps_doctors>h2{
     display: flex;
@@ -354,22 +403,23 @@ a[href^="tel"]{
     line-height: 56px;
     /* padding-left: 10px; */
     /* margin-top: 75px; */
-    margin-bottom: 2px;
+    margin: 16px 0px 0px 0px;
+    /* margin-bottom: 2px; */
 }
 
+
 .stamps_doctors>h4{
-    /* display: flex; */
+    display: flex;
     color: #EB990F;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    padding-left: 20px;
+    margin: 0;
     /* margin-top: 39px; */
-    margin-bottom: 0px;
     width: 84px;
     flex-direction: row;
-    flex-wrap: nowrap;
-    margin-bottom: 4px;
+    align-content: flex-end;
+    
 }
 .services_top{
     display: flex;
@@ -479,7 +529,7 @@ a[href^="tel"]{
     background-repeat: no-repeat;
     text-align: left;
     padding-top: 2px;
-    margin-left: 22px;
+    margin-left: 24px;
     margin-bottom: 32px;
     font-size: 40px;
     color: #3A6AB2;
@@ -499,19 +549,14 @@ a[href^="tel"]{
 }
 .prices_table{
     order: 1;
-    width: 557px;
-    width: 572Spx;
-    margin-left: 26px;
-    margin-right: 8px;
+    width: 557px;    
+    margin-left: 24px;
+    
     
 }
 .prices_table_mini{
-    margin-left: 6px;
-    /* margin-right: -94px; */
-    /* max-width: 393px; */
-    /* max-height: 167px; */
-    /* min-width: 341px; */
-    width: 394px;
+    width: auto;
+	margin: auto 24px;
     height: 166px;
 }
 .pricestable_mini{
@@ -535,13 +580,13 @@ a[href^="tel"]{
 
 #p{
     font-size: 14px;
-    text-align: left;
+    text-align: right;
     width: 112px;
     text-indent: 20px;
     }
 #pm{
     font-size: 14px;
-    text-align: left;
+    text-align: right;
     /* width: 120px; */
     width: 124px;
     text-indent: 40px;
@@ -567,10 +612,7 @@ a[href^="tel"]{
 
 .prices_text{
     display: flex;
-    /* margin-right: 14px; */
-    margin-left: 32px;
-    /* max-width: 567px; */
-    /* min-height: 96px; */
+    margin: auto 24px;
     align-self: flex-start;
     width: 382px;
 }
@@ -711,7 +753,7 @@ a[href^="tel"]{
 .contacts{
     display: flex;
     justify-content: space-between;
-    padding: 20px 20px 2px 26px;
+    padding: 24px 24px 2px 26px;
     margin-top: 80px;
     padding-bottom: 52px;
 }
@@ -752,7 +794,7 @@ a[href^="tel"]{
 
 .contacts_info>h1{
    /* padding-right: 120px; */
-   padding-left: 14px;
+   padding-left: 16px;
    font-weight: 400;
    font-size: 40px;
    width: 100%;
@@ -760,7 +802,7 @@ a[href^="tel"]{
 }
 
 .contacts_img{
-    padding-top: 34px;
+    padding-top: 20px;
     /* padding-bottom: 130px; */
     width: 62px;
     height: 50px;
@@ -784,9 +826,10 @@ a[href^="tel"]{
     text-decoration-line: underline;
     text-underline-position: under;
     color: #EB990F;
-    padding-left: 18px;
+    padding-left: 16px;
     /* padding-bottom: 20px; */
-    margin-top: -14px; 
+    margin-top: -14px;
+	margin-left: 0;
 }
 .contacts_info>h4{
     width: 260px;
@@ -796,8 +839,9 @@ a[href^="tel"]{
     line-height: 20px;
     font-weight: 400;
     color: #EB990F;
-    padding-left: 12px;
+    padding-left: 16px;
     margin-top: 6px;
+	margin-left: 0;
 }
 .contacts_info>h5{
     width: 90%;
@@ -809,11 +853,12 @@ a[href^="tel"]{
     padding-left: 16px;
     margin-top: -30px;
 }
+
 .footer{
-    max-width: 1024px;
     height: 107px;
     margin-top: auto;
     background-image: url(../img/footer_vector.svg);
+    background-size: cover;
 }
 
 @media only screen and (max-width: 420px) {
@@ -837,7 +882,8 @@ a[href^="tel"]{
     background-image: url(../img/header_vector_mobile.svg);
     background-repeat: no-repeat;
     position: relative;
-    z-index: 1;
+    z-index: 3;
+    top: 0;
     
 }
 
@@ -860,6 +906,7 @@ a[href^="tel"]{
 }
 .header{
     width: 100%;
+    height: 74px;
 }
 
 .logo-image{
@@ -917,6 +964,10 @@ content: '';
     
 }
 
+input:checked ~ * .menu__btn{
+    margin-bottom: 10rem;
+ }
+
 input:checked ~ * .menu__btn > span {
     transform: rotate(45deg);
  }
@@ -932,7 +983,7 @@ input:checked ~ * .menu__btn > span::after {
 
 input:checked + * .nav{
     display: flex;
-    opacity: 100;
+    opacity: 1;
     position: fixed;
     top: -14px;
     left: 0;
@@ -945,11 +996,17 @@ input:checked + * .nav{
     background-color: #E5E5E5;
     justify-content: space-evenly;
     transition-duration: 0.5s;
+    z-index: 2;
     
 }
-  
 
-  input:checked + * .nav> li> a{
+input:checked ~ .vector{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+input:checked + * .nav> li> a{
     font-size: larger;
     text-decoration: none;
     
@@ -1100,16 +1157,27 @@ input:checked + * .nav{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* width: 976px; */
-    height: 1080px;
+    width: auto;
+    height: fit-content;
     flex-wrap: wrap;
     margin-bottom: 60px;
     align-content: space-around;
+    gap: 20px;
 }
+
+.stamp{
+    width: auto;
+    padding: 20px 32px;
+}
+
+.stamp>h3{
+    width: auto;
+}
+
 
 .services_top {
     display: flex;
-    width: 90%;
+    width: auto;
     margin-left: 20px;
     margin-right: 20px;
     flex-wrap: wrap;
@@ -1130,9 +1198,7 @@ input:checked + * .nav{
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    align-content: flex-start;
-    margin-left: 20px;
-    margin-right: 20px;
+    align-content: center;
     margin-bottom: 60px;
     justify-content: flex-start;
 }
@@ -1162,18 +1228,19 @@ input:checked + * .nav{
     flex-wrap: wrap;
     flex-direction: column;
     height: 771px;
-    width: 90%;
+    width: auto;
     justify-content: flex-start;
     align-items: center;
     align-content: space-between;
     margin-left: 20px;
+	margin-right: 20px;
     margin-top: -14px;
     margin-bottom: 0px;
 }
 
 .services-text-bottom {
     order: 0;
-    width: 90%;
+    width: auto;
     /* height: 188px; */
     /* padding: 50px; */
     display: inline-block;
@@ -1193,7 +1260,7 @@ input:checked + * .nav{
     order: 1;
     margin-right: 20px;
     margin-left: 20px;
-    width: 88%;
+    width: auto;
     /* height: 45%; */
     display: inline-block;
     z-index: 1;
@@ -1234,19 +1301,21 @@ input:checked + * .nav{
     align-items: center;
     align-content: space-between;
     text-align: center;
+	line-height: 40px;
 }
 
 .prices {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 100%;
-    width: 90%;
+    height: fit-content;
+    width: auto;
     margin-left: 20px;
     margin-right: 20px;
     justify-content: flex-start;
     align-items: center;
     align-content: space-around;
+    gap: 20px;
 }
 
 .prices_table {
@@ -1265,19 +1334,22 @@ input:checked + * .nav{
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 5%;
+    margin: auto;
+    width: auto;
+    padding: 10px;
 }
 
-
-.pricestable {
-    /* max-width: 518px; */
-    width: 95%;
-    /* height: 100%; */
+.pricestable{
+    
+    width: auto;
+    height: fit-content;
 }
+
 
 .prices_table_and_text {
     display: flex;
     order: 2;
-    width: 90%;
+    width: auto;
     height: 40%;
     /* align-self: center; */
     flex-direction: column;
@@ -1292,8 +1364,8 @@ input:checked + * .nav{
     /* max-width: 393px; */
     /* max-height: 167px; */
     /* min-width: 341px; */
-    width: 100%;
-    height: 55%;
+    width: auto;
+    height:fit-content;
     /* align-self: center; */
 }
 
@@ -1334,7 +1406,7 @@ input:checked + * .nav{
     display: flex;
     justify-content: space-between;
     min-width: 80%;
-    width: 90%;
+    width: auto;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: space-between;
@@ -1344,7 +1416,7 @@ input:checked + * .nav{
 .action_call_text {
     display: flex;
     padding-top: 24px;
-    width: 90%;
+    width: auto;
     /* min-height: 452px; */
     height: 100%;
     flex-direction: column;
@@ -1392,6 +1464,14 @@ input:checked + * .nav{
     height: 1090px;
 }
 
+.feedback_unit {
+
+    width: auto;
+    background-size: cover; 
+	min-width: 272px;
+
+}
+
 .feedback_title {
     padding-left: 0px;
 }
@@ -1437,8 +1517,9 @@ input:checked + * .nav{
     flex-wrap: wrap;
     align-content: space-between;
     align-items: stretch;
-    width: 90%;
-    height: 1100px;
+    width: auto;
+    height: fit-content;
+    gap: 20px;
 }
 
 .contacts_info {
@@ -1472,13 +1553,12 @@ input:checked + * .nav{
     border-color: #5EBB99;
     border: 2px solid #87B4E1;
     border-radius: 24px;
-    width: 100%;
-    margin-right: 24px;
-    min-width: 0px;
+    width: auto;
+    margin-right: 0;
+    min-width: auto;
+
+
 }
-
-
-
 }
     
 /*-------------------- Samples.html --------------------*/
@@ -1719,7 +1799,7 @@ margin-bottom: -90px;
     /* height: 55px; */
     text-align: left;
     /* padding-top: 20px; */
-    margin-left: 22px;
+    margin-left: 24px;
     /* margin-bottom: 49px; */
     font-weight: 400;
     font-size: 40px;
@@ -1729,7 +1809,6 @@ margin-bottom: -90px;
 }
 
 .samples_h1>h1 {
-    margin-left: 24px;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -1738,8 +1817,8 @@ margin-bottom: -90px;
     color: #2A2A2A;
     align-self: center;
     width: 90%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
     height: 64px;
     text-align: left;
 }
@@ -1749,7 +1828,7 @@ margin-bottom: -90px;
 .stamp_001, .stamp_002, .stamp_003, .stamp_0101, .stamp_0102, .stamp_0103, .stamp_ip_001, .stamp_ip_002, .stamp_ip_003, .stamp_dr_b01, .stamp_dr_b05, .stamp_dr_b04 {
     display: flex;
     flex-direction: column;
-    width: 97%;
+    width: auto;
     height: 320px;
     border-color: #5EBB99;
     border: 2px solid #87B4E1;
@@ -1854,7 +1933,7 @@ margin-bottom: -90px;
     height: 380px;
     text-align: left;
     /* padding-top: 20px; */
-    margin-left: 22px;
+    margin-left: 20px;
     /* margin-bottom: 49px; */
     font-weight: 400;
     font-size: 32px;
@@ -1993,6 +2072,7 @@ display: none;
     padding-top: 0px;
     align-content: stretch;
     z-index: 1;
+	
 }
 
 #container_wo{
@@ -2088,7 +2168,7 @@ input#long-form{
 }
 
 div>h2{
-    width: 90%;
+    width: auto;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -2205,11 +2285,11 @@ input[type="file"]{
     align-content: space-around;
     justify-content: center;
     align-items: center;
-    margin-bottom: ;
+    margin-bottom: 0 ;
 }
 
 #order_banner{
-    width: 100%;
+    width: auto;
     height: 445px;
     background-image: url(../img/order_banner.svg);
     display: flex;
@@ -2217,8 +2297,9 @@ input[type="file"]{
     align-items: center;
     align-content: stretch;
     flex-wrap: wrap;
-    margin-bottom: -19px;
+	margin: 20px 20px -20px 20px;
     background-position: center;
+	text-align: center;
 }
 
 
@@ -2298,6 +2379,11 @@ input#file-input + label{
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+	cursor: pointer;
+}
+
+.label{
+	cursor: pointer;
 }
 
 #sumup-img{
@@ -2503,13 +2589,13 @@ div#text-input {
 
 .form-data {
     display: flex;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
     flex-wrap: wrap;
     align-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
-    width: 95%;
+    width: auto;
 }
 
 input#short-form {
@@ -2556,7 +2642,7 @@ input#short-form {
     width: 100%;
     justify-content: space-around;
     margin-bottom: 53px;
-    height: 483px;
+    height: fit-content;
 }
 
 #main_container {
@@ -2631,6 +2717,9 @@ input:focus, textarea:focus{
     font-size: 20px;
 }
 
+
+
+
 #sumup-banner {
     display: flex;
     width: 100%;
@@ -2659,7 +2748,8 @@ input:focus, textarea:focus{
     align-items: center;
     gap: 24px;
     justify-content: flex-end;
-    margin-top: -42px;
+    margin-top: -30px;
+	
 
     
 }
