@@ -13,6 +13,11 @@ body{
     height: 100%;
 }
 
+
+a{
+    transition: all .2s;
+}
+
 .wow{
     opacity: 0;
     transform: translateY(-8px);
@@ -316,13 +321,16 @@ a[href^="mailto"]:hover{
     justify-content: flex-start;
     /* padding: 6px; */
     align-items: flex-start;
+    
     /* padding-left: 20px;*/
 }
 
 .stamp:hover{
-	outline: 4px solid #5EBB99;
-    outline-offset: -2px;
+    box-shadow: 0px 0px 0px 4px #5EBB99;
+    border: 2px solid #5EBB99;
+    transition: .2s;
 }
+
 
 
 
@@ -2072,6 +2080,7 @@ display: none;
     padding-top: 0px;
     align-content: stretch;
     z-index: 1;
+    transition: .2s;
 	
 }
 
@@ -2152,10 +2161,12 @@ input:focus, textarea:focus{
     font-size: 24px;
     padding: 6px;
     outline: none;
+    transition: .2s;
 }
 
 input:focus{
     height: 41px;
+    transition: .2s;
 }
 
 
@@ -2778,6 +2789,7 @@ input:focus, textarea:focus{
 
 input#file-input + label:hover{
     background-color: #233e68;
+    transition: .2s;
 }
 
 .links:hover{
